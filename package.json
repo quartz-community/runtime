@@ -37,12 +37,13 @@
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit"
   },
-  "devDependencies": {
-    "tsup": "^8.5.0",
-    "typescript": "^5.9.3"
-  },
+  "devDependencies": {},
   "engines": {
     "node": ">=22",
     "npm": ">=10.9.2"
+  },
+  "dependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3"
   }
 }
