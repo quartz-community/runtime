@@ -88,6 +88,25 @@ export function onPreNav(callback: () => void): () => void {
   return () => document.removeEventListener("prenav", callback);
 }
 
+/**
+ * Register render event handler.
+ * The 'render' event fires when DOM content changes in-place (e.g. after decryption,
+ * theme change, or dynamic content injection) and components need to re-initialize.
+ * This is distinct from 'nav' which fires on page navigation.
+ */
+export function onRender(callback: (e: Event) => void): () => void {
+  document.addEventListener("render", callback);
+
+  const cleanup = () => document.removeEventListener("render", callback);
+
+  // Register with window.addCleanup if available (Quartz integration)
+  if (typeof window !== "undefined" && (window as any).addCleanup) {
+    (window as any).addCleanup(cleanup);
+  }
+
+  return cleanup;
+}
+
 // ============================================================================
 // DOM Utilities
 // ============================================================================
