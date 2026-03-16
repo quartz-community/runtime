@@ -1,3 +1,5 @@
+import type { ContentIndex } from "@quartz-community/types";
+
 /**
  * Browser runtime utilities for Quartz community plugins
  * These utilities run in the browser to support community plugins
@@ -51,13 +53,8 @@ export function loadScripts(sources: string[]): Promise<void[]> {
 // Data Fetching
 // ============================================================================
 
-/**
- * Fetches and parses contentIndex.json
- */
-export async function fetchContentIndex(): Promise<Record<string, any>> {
-  const response = await fetch("/static/contentIndex.json");
-  const data = await response.json();
-  return data.content || data;
+export async function fetchContentIndex(): Promise<ContentIndex> {
+  return fetchData;
 }
 
 // ============================================================================
