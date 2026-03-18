@@ -44,6 +44,7 @@
   },
   "dependencies": {
     "@quartz-community/types": "github:quartz-community/types",
+    "@quartz-community/utils": "github:quartz-community/utils",
     "tsup": "^8.5.0",
     "typescript": "^5.9.3"
   }

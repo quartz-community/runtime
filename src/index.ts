@@ -1,4 +1,5 @@
 import type { ContentIndex } from "@quartz-community/types";
+import { resolveBasePath } from "@quartz-community/utils/path";
 
 /**
  * Browser runtime utilities for Quartz community plugins
@@ -177,7 +178,7 @@ export function getCurrentSlug(): string {
  * Navigate to a slug
  */
 export function navigateTo(slug: string): void {
-  window.location.href = "/" + slug;
+  window.location.href = resolveBasePath(slug);
 }
 
 // ============================================================================
