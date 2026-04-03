@@ -37,7 +37,6 @@
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit"
   },
-  "devDependencies": {},
   "engines": {
     "node": ">=22",
     "npm": ">=10.9.2"
