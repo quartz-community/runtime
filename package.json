@@ -35,16 +35,20 @@
     "build": "tsup",
     "prepare": "npm run build",
     "dev": "tsup --watch",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
   },
   "engines": {
     "node": ">=22",
     "npm": ">=10.9.2"
   },
   "dependencies": {
-    "@quartz-community/types": "github:quartz-community/types",
-    "@quartz-community/utils": "github:quartz-community/utils",
+    "@quartz-community/types": "^0.2.1",
+    "@quartz-community/utils": "^0.1.0",
     "tsup": "^8.5.0",
     "typescript": "^5.9.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
