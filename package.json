@@ -1,6 +1,6 @@
 {
   "name": "@quartz-community/runtime",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Browser runtime utilities for Quartz community plugins",
   "type": "module",
   "license": "MIT",
@@ -44,8 +44,8 @@
     "npm": ">=10.9.2"
   },
   "dependencies": {
-    "@quartz-community/types": "^0.2.1",
-    "@quartz-community/utils": "^0.1.0",
+    "@quartz-community/types": "^1.0.0",
+    "@quartz-community/utils": "^1.0.0",
     "tsup": "^8.5.0",
     "typescript": "^5.9.3"
   },
