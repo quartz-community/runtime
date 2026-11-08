@@ -1,6 +1,6 @@
 {
   "name": "@quartz-community/runtime",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Browser runtime utilities for Quartz community plugins",
   "type": "module",
   "license": "MIT",

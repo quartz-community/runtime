@@ -1,3 +1,9 @@
+## 1.0.1
+
+### Patch Changes
+
+- 4fd2f7c: Move `tsup` and `typescript` to `devDependencies`: they only build the package, so sites no longer install them (and esbuild, rollup) through plugins that depend on the runtime.
+
 ## 1.0.0
 
 ### Major Changes
