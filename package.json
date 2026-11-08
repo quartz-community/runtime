@@ -45,14 +45,14 @@
   },
   "dependencies": {
     "@quartz-community/types": "^1.0.0",
-    "@quartz-community/utils": "^1.0.0",
-    "tsup": "^8.5.0",
-    "typescript": "^5.9.3"
+    "@quartz-community/utils": "^1.0.0"
   },
   "publishConfig": {
     "access": "public"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.29.2"
+    "@changesets/cli": "^2.29.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3"
   }
 }
